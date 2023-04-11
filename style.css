@@ -1,0 +1,337 @@
+:root{
+    --background:#FFFFFF;
+    --text-color: #667085;
+    --text-red: #8E2424;
+    --text-black:#101828;
+    --font-principal: 'Inter', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--background);
+    width: auto;
+    height: 100vh;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+     
+}
+
+.links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 2em;
+}
+
+button{
+    padding: 0.8em 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    font-weight: 500;
+    background: none;
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+
+button#signUp {
+    background-color:var(--text-red);
+    color: #FFF;
+}
+
+button#signUp:hover{
+    color: gray;
+}
+
+.content-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0;
+    gap: 24px;
+    
+}
+
+.content-header__sobre {
+    color: var(--text-red);
+    font-family: var(--font-principal);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.content-header__titulo {
+    font-family: var(--font-principal);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    color: var(--text-black);
+    letter-spacing: -0.02em;
+    padding: 24px 0;
+}
+
+.content-header__texto {
+    width: 790px;
+    height: 60px;
+    font-family: var(--font-principal);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--text-color);
+    padding: 0 0 96px 0;
+}
+
+.container-metricas {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 280px 280px 280px 280px;
+    column-gap: 32px;
+    padding: 0 32px;       
+}
+
+.container-metricas__blocos {
+    padding: 0 0 96px 0;
+}
+
+.container-metricas h2 {
+    font-family: var(--font-principal);
+    font-weight: 600;
+    font-size: 60px;
+    color: var(--text-red);
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    padding: 0 0 12px;
+}
+
+.container-metricas h4 {
+    font-family: var(--font-principal);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-black);
+    padding: 0 0 8px;
+}
+
+.container-metricas p{
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    
+}
+
+.container-vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+
+
+.container-vagas h4 {
+    font-family: var(--font-principal);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-red);
+    padding: 4px 12px;
+    
+     
+}
+
+.container__vagas__fundo {
+    
+    background-color: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+    padding: 0 0 16px 0;
+}
+
+.container-vagas h2 {
+    font-family: var(--font-principal);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    color: var(--text-black);
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    padding: 0 0 20px 0;
+    
+}
+
+.container-vagas p {
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: var(--text-color);
+    line-height: 30px;
+    padding: 0 0 64px 0;
+    
+}
+
+.container__vagas__imagem {
+    margin: 0 112px;    
+    padding: 0 0 64px 0;
+}
+
+/* inicio parte das vagas em cards */
+.vagas-abertas {
+    padding-top: 4rem;
+  }
+  
+  .vagas-abertas span.area-principal {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: var(--title-color);
+  }
+  
+  .vaga {
+    border: 1px solid #EAECF0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: var(--title-color);
+  }
+  
+  .vaga span.titulo-vaga {
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  
+  .vaga .informacoes {
+    margin-top: 1rem;
+    font-size: 90%;
+    color: var(--text-color);
+    display: flex;
+    gap: 2rem;
+  }
+/* fim parte das vagas em cards */
+
+.container-colaboradores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    background: rgba(196, 25, 25, 0.03);
+    border-radius: 16px;
+    margin: 0 112px 96px;   
+}
+
+.container-colaboradores__info {
+    font-family: var(--font-principal);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-red);
+    text-align: center;
+    padding: 0 0 16px 0;
+}
+
+.container-colaboradores h2 {
+    font-family: var(--font-principal);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--text-black);
+    padding: 0 0 32px 0;
+}
+
+.colaborador-nome {
+    font-family: var(--font-principal);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 0 4px 0;
+}
+
+.colaborador-cargo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-color);
+    
+}
+
+/* rodape */
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9FAFB;
+    padding: 96px 0;
+    gap: 32px;
+}
+
+.rodape h2 {
+    font-family: var(--font-principal);
+    font-weight: 600;
+    color: var(--text-black);
+    font-size: 36px;
+}
+
+.rodape__texto {
+    font-style: var(--font-principal);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.rodape__email {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+input {
+    width: 360px;
+    height: 48px;
+    border-radius: 8px;
+    border-color: #D0D5DD;
+}
+
+.botao-cadastrar {
+    background-color: var(--text-red);
+    height: 48px;
+    border-radius: 10px;
+    color: var(--background);
+}
+
+.rodape__direitos {
+    font-size: 16px;
+    color: var(--text-color);
+}
